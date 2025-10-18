@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Lemonade( modifier: Modifier = Modifier) {
     var result by remember { mutableIntStateOf(1) }
+
     val imagem = when(result){
         1 -> R.drawable.lemon_tree
         2 -> R.drawable.lemon_squeeze
